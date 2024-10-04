@@ -7,4 +7,4 @@ version = "1.2.0"
 grapheme = []
 
 [dependencies]
-unicode-segmentation = "1.8"
+unicode-reverse = "1.0.9"

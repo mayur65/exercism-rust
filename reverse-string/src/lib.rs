@@ -1,6 +1,7 @@
-use unicode_segmentation::UnicodeSegmentation;
+use unicode_reverse::reverse_grapheme_clusters_in_place;
 
 pub fn reverse(input: &str) -> String {
-    let rev_string = input.graphemes(true).rev().collect();
-    return rev_string;
+    let mut ans_str = input.to_string();
+    reverse_grapheme_clusters_in_place(&mut ans_str);
+    return ans_str;
 }
